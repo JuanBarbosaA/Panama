@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export default function Header() {
+export default function ServiciosHeader() {
   const router = useRouter();
 
   return (
@@ -11,7 +11,7 @@ export default function Header() {
       {/* Imagen de fondo */}
       <Image
         alt="Header image"
-        src="/image0.jpg"
+        src="/servicios-header.jpg"
         width={1500}
         height={500}  // Ajusta según necesites
         className="w-full h-auto"
@@ -22,7 +22,7 @@ export default function Header() {
       <div className="absolute top-0 left-0 w-full h-full">
         {/* Ejemplo de 3 elementos, cada uno posicionado y dimensionado con % */}
         <div
-          className="absolute cursor-pointer bg-transparent"
+          className="absolute cursor-pointer bg-transparent "
           style={{
             top: "61%",    // Se ubica 20% desde el top del contenedor
             left: "27.3%",   // Se ubica 15% desde el left del contenedor
@@ -34,20 +34,20 @@ export default function Header() {
         </div>
 
         <div
-          className="absolute cursor-pointer bg-transparent"
+          className="absolute cursor-pointer bg-transparent "
           style={{
             top: "61%",
             left: "35.45%",
             width: "10%",
             height: "25%",
           }}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/servicios")}
         >
           {/* Ítem 2 */}
         </div>
 
         <div
-          className="absolute cursor-pointer bg-transparent"
+          className="absolute cursor-pointer bg-transparent "
           style={{
             top: "61%",
             left: "45.7%",
@@ -60,20 +60,20 @@ export default function Header() {
           
         </div>
         <div
-          className="absolute cursor-pointer bg-transparent"
+          className="absolute cursor-pointer bg-transparent "
           style={{
             top: "61%",
             left: "57.6%",
             width: "11.5%",
             height: "25%",
           }}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/servicios")}
         >
           {/* Ítem 3 */}
           
         </div>
         <div
-          className="absolute cursor-pointer bg-transparent"
+          className="absolute cursor-pointer bg-transparent "
           style={{
             top: "61%",
             left: "69.5%",
@@ -81,6 +81,32 @@ export default function Header() {
             height: "25%",
           }}
           onClick={() => router.push("/contacto")}
+        >
+          {/* Ítem 3 */}
+          
+        </div>
+        <div
+          className="absolute cursor-pointer bg-transparent "
+          style={{
+            top: "101%",
+            left: "45.7%",
+            width: "11.5%",
+            height: "25%",
+          }}
+          onClick={() => router.push("/servicios")}
+        >
+          {/* Ítem 3 */}
+          
+        </div>
+        <div
+          className="absolute cursor-pointer bg-transparent "
+          style={{
+            top: "139.5%",
+            left: "45.7%",
+            width: "11.5%",
+            height: "25%",
+          }}
+          onClick={() => router.push("/catalogo")}
         >
           {/* Ítem 3 */}
           
